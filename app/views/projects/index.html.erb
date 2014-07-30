@@ -1,0 +1,17 @@
+<h1>Project Index</h1>
+
+<%= link_to 'Add New', new_project_path %>
+
+<ul>
+	<% @projects.each do |project| %>
+		<li>
+			<%= project.name %>
+			<%= project.url %>
+			<%= project.description %>
+			<%= link_to 'Show', project_path(project) %>
+			<%= link_to 'Edit', edit_project_path(project) %>
+			<%= link_to 'Delete', project_path(project), :method => :delete %>
+		</li>
+	<% end %>
+
+</ul>

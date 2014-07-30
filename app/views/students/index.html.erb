@@ -1,0 +1,18 @@
+<h1>Student Index</h1>
+
+<%= link_to 'Add New', new_student_path %>
+
+<ul>
+	<% @students.each do |student| %>
+		<li>
+			<%= student.first_name %>
+			<%= student.last_name %>
+			<%= student.school %>
+			<%= image_tag student.pic.url(:thumb) %>
+			<%= link_to 'Show',  student_path(student) %>
+			<%= link_to 'Edit', edit_student_path(student) %>
+			<%= link_to 'Delete', student_path(student), :method => :delete %>
+		</li>
+	<% end %>
+
+</ul>

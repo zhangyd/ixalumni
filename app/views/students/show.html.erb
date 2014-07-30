@@ -1,0 +1,23 @@
+<p>
+	<strong>First Name:</strong>
+	<%= @student.first_name %>
+</p>
+
+<p>
+	<strong>Last Name:</strong>
+	<%= @student.last_name %>
+</p>
+
+<p>
+	<strong>School:</strong>
+	<%= @student.school %>
+</p>
+
+<p>
+	<strong>Profile Picture:</strong>
+	<%= image_tag @student.pic.url(:thumb) %>
+</p>
+
+
+<%= link_to 'Edit', edit_student_path(@student) %>  |  
+<%= link_to 'Back', students_path %>

@@ -1,0 +1,47 @@
+<%= form_for(@student, :html => { :multipart => true }) do |f| %>
+	<%= f.label :first_name %>
+	<%= f.text_field :first_name %>
+	<br/><br/>
+
+	<%= f.label :last_name %>
+	<%= f.text_field :last_name %>
+	<br/><br/>
+
+	<%= f.label :school %>
+	<%= f.text_field :school %>
+	<br/><br/>
+
+	<%= f.label :year %>
+	<%= f.text_field :year %>
+	<br/><br/>
+
+	<%= f.label :major %>
+	<%= f.text_field :major %>
+	<br/><br/>
+
+	<%= f.label :email %>
+	<%= f.text_field :email %>
+	<br/><br/>
+
+	<%= f.label :github %>
+	<%= f.text_field :github %>
+	<br/><br/>
+
+	<%= f.label :about %>
+	<%= f.text_field :about %>
+	<br/><br/>
+
+	<%= f.label :quote %>
+	<%= f.text_field :quote %>
+	<br/><br/>
+
+	<%= f.label :project %>
+	<%= f.text_field :project_id %>
+	<br/><br/>
+
+	<%= f.label :profile_picture %>
+	<%= f.file_field :pic %>
+	<br/><br/>
+
+	<%= f.submit %>
+<% end %>
