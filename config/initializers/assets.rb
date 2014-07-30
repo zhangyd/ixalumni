@@ -1,0 +1,6 @@
+Rails.application.config.assets.precompile += %w( icons.css )
+Rails.application.config.assets.precompile += %w( normalize.css )
+Rails.application.config.assets.precompile += %w( style3.css )
+Rails.application.config.assets.precompile += %w( modernizr.custom.js )
+Rails.application.config.assets.precompile += %w( classie.js )
+Rails.application.config.assets.precompile += %w( borderMenu.js )
