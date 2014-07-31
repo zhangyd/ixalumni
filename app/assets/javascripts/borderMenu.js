@@ -20,7 +20,7 @@
 	function init() {
 
 		var menu = document.getElementById( 'bt-menu' ),
-			trigger = menu.querySelector( 'a.bt-menu-trigger' ),
+			trigger = document.querySelector( 'a.bt-menu-trigger' ), //changed menu to document here
 			// triggerPlay only for demo 6
 			triggerPlay = document.querySelector( 'a.bt-menu-trigger-out' ),
 			// event type (if mobile use touch events)
@@ -36,7 +36,7 @@
 
 		var overlay = document.createElement('div');
 		overlay.className = 'bt-overlay';
-		menu.appendChild( overlay );
+		menu.appendChild( overlay );  
 
 		trigger.addEventListener( eventtype, function( ev ) {
 			ev.stopPropagation();
@@ -68,3 +68,22 @@
 	init();
 
 })();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

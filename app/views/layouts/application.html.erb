@@ -8,13 +8,16 @@
 		<title>IX Alumni</title>
 		<!-- <link rel="shortcut icon" href="../favicon.ico"> -->
 
-		<%= stylesheet_link_tag    'icons' %>
 		<%= stylesheet_link_tag    'normalize' %>
+		<%= stylesheet_link_tag    'icons' %>
 		<%= stylesheet_link_tag    'menu' %>
+		<%= stylesheet_link_tag    'featured' %>
+  		<%= stylesheet_link_tag    'jquery.jscrollpane' %>
   		<%= javascript_include_tag 'modernizr.custom' %>
   		<%= javascript_include_tag 'application' %>
-  		<%= stylesheet_link_tag    'featured' %>
-  		<%= stylesheet_link_tag    'jquery.jscrollpane' %>
+
+  		<%= stylesheet_link_tag    'project' %>
+  		<%= javascript_include_tag 'modernizr.custom.53451' %>
   		
   		<%= csrf_meta_tags %>
 	</head>
@@ -27,8 +30,8 @@
 			<nav id="bt-menu" class="bt-menu">
 				<a href="#" class="bt-menu-trigger"><span>Menu</span></a>
 				<ul>
-					<li><a href="#" class="bt-icon icon-user-outline">Home</a></li>
-					<li><a href="#" class="bt-icon icon-sun">Porjects</a></li>
+					<li><%= link_to 'Home', root_path %></li>
+					<li><%= link_to 'Projects', projects_path %></li>
 					<li><a href="#" class="bt-icon icon-windows">FAQ</a></li>
 					<li><a href="#" class="bt-icon icon-speaker">Contact</a></li>
 					<li><a href="#" class="bt-icon icon-star">Gallery</a></li>
@@ -40,12 +43,34 @@
 
 	<%= javascript_include_tag 'classie' %>
 	<%= javascript_include_tag 'borderMenu' %>
+
+	<!-- the featured page work with this -->
 	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
 	<%= javascript_include_tag 'jquery.easing.1.3' %>	
 	<!-- the jScrollPane script -->
 	<%= javascript_include_tag 'jquery.mousewheel' %>
 	<%= javascript_include_tag 'jquery.contentcarousel' %>
+
+	<%= javascript_include_tag 'jquery.gallery' %>
+
+
+
 	<script type="text/javascript">
+
+		$(function() {
+			$('#dg-container').gallery();
+		});
+
 		$('#ca-container').contentcarousel();
-	</script>
+
+	</script/>
+
+
 </html>
+
+
+
+
+
+

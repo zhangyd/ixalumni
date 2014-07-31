@@ -1,4 +1,8 @@
 /* Circular Content Carousel Style */
+.container {
+	text-align: center;
+}
+
 .ca-container{
 	position:relative;
 	margin:25px auto 20px auto;
@@ -204,7 +208,7 @@
 .ca-nav span{
 	width:25px;
 	height:38px;
-	background:transparent url(../images/arrows.png) no-repeat top left;
+	background:transparent url(/assets/arrows.png) no-repeat top left;
 	position:absolute;
 	top:50%;
 	margin-top:-19px;

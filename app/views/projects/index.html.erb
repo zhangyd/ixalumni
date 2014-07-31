@@ -1,17 +1,59 @@
-<h1>Project Index</h1>
+ <div class="container">
+			
+	<section id="dg-container" class="dg-container">
+		<div class="dg-wrapper">
 
-<%= link_to 'Add New', new_project_path %>
+			
+			<li>
+				<%= image_tag @projects[0].screenshot %>
+				<div><%= @projects[0].url %></div>
+			</li>
+			
+			<li>
+				<%= image_tag @projects[1].screenshot %>
+				<div><%= @projects[1].url %></div>
+			</li>
+			
+			<li>
+				<%= image_tag @projects[2].screenshot %>
+				<div><%= @projects[2].url %></div>
+			</li>
+			
+			<li>
+				<%= image_tag @projects[3].screenshot %>
+				<div><%= @projects[3].url %></div>
+			</li>
+			
+			<li>
+				<%= image_tag @projects[4].screenshot %>
+				<div><%= @projects[4].url %></div>
+			</li>
+			
 
-<ul>
-	<% @projects.each do |project| %>
-		<li>
-			<%= project.name %>
-			<%= project.url %>
-			<%= project.description %>
-			<%= link_to 'Show', project_path(project) %>
-			<%= link_to 'Edit', edit_project_path(project) %>
-			<%= link_to 'Delete', project_path(project), :method => :delete %>
-		</li>
-	<% end %>
+			
+		</div>
 
-</ul>
+		<nav>	
+			<span class="dg-prev">&lt;</span>
+			<span class="dg-next">&gt;</span>
+		</nav>
+
+	</section>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
