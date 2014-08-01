@@ -1,0 +1,11 @@
+<%= form_for(@faq) do |f| %>
+	<%= f.label :question %>
+	<%= f.text_field :question %>
+	<br/><br/>
+
+	<%= f.label :answer %>
+	<%= f.text_field :answer %>
+	<br/><br/>
+
+	<%= f.submit %>
+<% end %>
