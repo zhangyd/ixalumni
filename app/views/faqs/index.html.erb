@@ -1,10 +1,26 @@
-<h1>FAQ Index Page</h1>
+<div class="container">
 
-<ul>
-	<% @faqs.each do |faq| %>
-		<li>
-			<%= faq.question %>
-			<%= faq.answer %>
-		</li>
-	<% end %>
-</ul>
+	<h1>FAQ Index Page</h1>
+
+	<section id="fa_container" class="fa_container">
+
+		<ul id="fa_list">
+			<% @faqs.each do |faq| %>
+				<li>
+
+					<div class="fa_question" id=<%="#{faq.id}"%>>
+						<%= faq.question %>
+					</div>
+					
+					<div class="fa_answer" id=<%="fa_answer#{faq.id}"%>>
+						<%= faq.answer %>
+					</div>
+
+				</li>
+			<% end %>
+		</ul>
+			
+
+	</section>
+	
+</div>

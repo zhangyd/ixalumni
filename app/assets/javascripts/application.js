@@ -13,3 +13,12 @@
 //= require jquery
 //= require jquery_ujs
 //= require_tree .
+
+$(function () {
+	$(".fa_answer").hide();
+
+	$('.fa_question').click(function () {
+		var id = this.id
+		$('#fa_answer'+id).slideToggle()
+	});
+});

@@ -13,6 +13,7 @@
 		<%= stylesheet_link_tag    'menu' %>
 		<%= stylesheet_link_tag    'featured' %>
   		<%= stylesheet_link_tag    'jquery.jscrollpane' %>
+  		<%= stylesheet_link_tag    'faq' %>
   		<%= javascript_include_tag 'modernizr.custom' %>
   		<%= javascript_include_tag 'application' %>
 
@@ -32,8 +33,10 @@
 				<ul>
 					<li><%= link_to 'Home', root_path %></li>
 					<li><%= link_to 'Projects', projects_path %></li>
-					<li><a href="#" class="bt-icon icon-windows">FAQ</a></li>
-					<li><a href="#" class="bt-icon icon-speaker">Contact</a></li>
+					<li><%= link_to 'FAQ', faqs_path %></li>
+					<li><%= link_to 'Contact', students_path %></li>
+					<!-- <li><a href="#" class="bt-icon icon-windows">FAQ</a></li> -->
+					<!-- <li><a href="#" class="bt-icon icon-speaker">Contact</a></li> -->
 					<li><a href="#" class="bt-icon icon-star">Gallery</a></li>
 					<li><a href="#" class="bt-icon icon-bubble">Other</a></li>
 				</ul>
