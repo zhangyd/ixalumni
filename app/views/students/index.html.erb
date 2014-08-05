@@ -1,18 +1,59 @@
-<h1>Student Index</h1>
 
-<%= link_to 'Add New', new_student_path %>
+<div class="container">
+	
+	<section class="ff-container">
 
-<ul>
-	<% @students.each do |student| %>
-		<li>
-			<%= student.first_name %>
-			<%= student.last_name %>
-			<%= student.school %>
-			<%= image_tag student.pic.url(:thumb) %>
-			<%= link_to 'Show',  student_path(student) %>
-			<%= link_to 'Edit', edit_student_path(student) %>
-			<%= link_to 'Delete', student_path(student), :method => :delete %>
-		</li>
-	<% end %>
+		
+		
+	
+		<input id="select-type-all" name="student-school" type="radio" class="ff-selector-type-all" checked="checked" />
+		<label for="select-type-all" class="ff-label-type-all">All</label>
 
-</ul>
+		<input id="barnard-college" name="student-school" type="radio" class="ff-barnard-college" />
+		<label for="barnard-college" class="ff-label-barnard-college">Barnard College</label>
+
+		<input id="dartmouth-college" name="student-school" type="radio" class="ff-dartmouth-college" />
+		<label for="dartmouth-college" class="ff-label-dartmouth-college">Dartmouth College</label>
+
+		<input id="georgetown-university" name="student-school" type="radio" class="ff-georgetown-university">
+		<label for="georgetown-university" class="ff-label-georgetown-university">Georgetown University</label>
+		
+		<input id="harvard-university" name="student-school" type="radio" class="ff-harvard-university" />
+		<label for="harvard-university" class="ff-label-harvard-university">Harvard University</label>
+
+		<input id="standford-university" name="student-school" type="radio" class="ff-standford-university">
+		<label for="standford-university" class="ff-label-standford-university">Standford University</label>
+
+		<input id="university-of-georgia" name="student-school" type="radio" class="ff-university-of-georgia">
+		<label for="university-of-georgia" class="ff-label-university-of-georgia">University of Georgia</label>
+
+		<input id="university-of-michigan" name="student-school" type="radio" class="ff-university-of-michigan" />
+		<label for="university-of-michigan" class="ff-label-university-of-michigan">University of Michigan</label>
+
+		<input id="university-of-southern-california" name="student-school" type="radio" class="ff-university-of-southern-california">
+		<label for="university-of-southern-california" class="ff-label-university-of-southern-california">University Of Southern California</label>
+
+		<input id="university-of-virginia" name="student-school" type="radio" class="ff-university-of-virginia">
+		<label for="university-of-virginia" class="ff-label-university-of-virginia">University of Virginia</label>
+		
+		<input id="yale-university" name="student-school" type="radio" class="ff-yale-university" />
+		<label for="yale-university" class="ff-label-yale-university">Yale University</label>
+		
+		
+
+		
+		<div class="clr"></div>
+
+			<ul class="ff-items">
+				
+				<% @students.each do |student| %>
+					<li class="<%= student.school %>">
+						<%= image_tag student.pic %>
+						<span><%= student.first_name + " " + student.last_name %></span>
+					</li>
+				<% end %>
+
+			</ul>
+
+	</section>
+</div>

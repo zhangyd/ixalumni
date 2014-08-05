@@ -10,6 +10,17 @@ class StudentsController < ApplicationController
 
 	def new
 		@student = Student.new
+		@schools = Hash.new([])
+		@schools["Barnard College"] = "ff-barnard-college"
+		@schools["Dartmouth College"] = "ff-dartmouth-college"
+		@schools["Georgetown University"] = "ff-georgetown-university"
+		@schools["Harvard University"] = "ff-harvard-university"
+		@schools["Standford University"] = "ff-standford-university"
+		@schools["University of Georgia"] = "ff-university-of-georgia"
+		@schools["University of Michigan"] = "ff-university-of-michigan"
+		@schools["University of Southern California"] = "ff-university-of-southern-california"
+		@schools["University of Virginia"] = "ff-university-of-virginia"
+		@schools["Yale University"] = "ff-yale-university"
 	end
 
 
@@ -28,6 +39,17 @@ class StudentsController < ApplicationController
 
 
 	def edit
+		@schools = Hash.new([])
+		@schools["Barnard College"] = "ff-barnard-college"
+		@schools["Dartmouth College"] = "ff-dartmouth-college"
+		@schools["Georgetown University"] = "ff-georgetown-university"
+		@schools["Harvard University"] = "ff-harvard-university"
+		@schools["Standford University"] = "ff-standford-university"
+		@schools["University of Georgia"] = "ff-university-of-georgia"
+		@schools["University of Michigan"] = "ff-university-of-michigan"
+		@schools["University of Southern California"] = "ff-university-of-southern-california"
+		@schools["University of Virginia"] = "ff-university-of-virginia"
+		@schools["Yale University"] = "ff-yale-university"
 	end
 
 
