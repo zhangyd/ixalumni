@@ -19,6 +19,7 @@
 	display: block;
 	text-align: left;
 	padding-left: 10px;
+	margin-bottom: 0px;
 	width: 25%;
 	height: 30px;
 	cursor: pointer;
@@ -37,12 +38,17 @@
 	/*float:left;*/
 	box-shadow: 0px 0px 0px 1px #aaa, 1px 0px 0px 0px rgba(255,255,255,0.9) inset, 0px 1px 2px rgba(0,0,0,0.2);
 }
+
 /*.ff-container label.ff-label-type-all{
 	border-radius: 3px 0px 0px 3px;
 }
 .ff-container label.ff-label-type-3{
 	border-radius: 0px 3px 3px 0px;
 }*/
+
+
+
+
 .ff-container input.ff-selector-type-all:checked ~ label.ff-label-type-all,
 .ff-container input.ff-barnard-college:checked ~ label.ff-label-barnard-college,
 .ff-container input.ff-dartmouth-college:checked ~ label.ff-label-dartmouth-college,
@@ -51,7 +57,7 @@
 .ff-container input.ff-standford-university:checked ~ label.ff-label-standford-university,
 .ff-container input.ff-university-of-georgia:checked ~ label.ff-label-university-of-georgia,
 .ff-container input.ff-university-of-michigan:checked ~ label.ff-label-university-of-michigan,
-.ff-container input.ff-university-of-southern-california:checked ~label.ff-label-university-of-southern-california,
+.ff-container input.ff-university-of-southern-california:checked ~ label.ff-label-university-of-southern-california,
 .ff-container input.ff-university-of-virginia:checked ~label.ff-label-university-of-virginia,
 .ff-container input.ff-yale-university:checked ~label.ff-label-yale-university {
 	background: #646d93;
@@ -66,6 +72,7 @@
 	text-shadow: 0px 1px 1px rgba(255,255,255,0.3);
 	box-shadow: 0px 0px 0px 1px #40496e, 0 1px 2px rgba(0,0,0,0.1) inset;
 }
+
 .ff-container input{
 	display: none;
 }
@@ -73,6 +80,7 @@
 	position: relative;
 	margin: 0px auto;
 	padding-top: 20px;
+	top: 0px;
 }
 
 .ff-items li{
@@ -97,17 +105,18 @@
 .ff-container input.ff-yale-university:checked ~ .ff-items .ff-yale-university,
 .ff-container input.ff-university-of-michigan:checked ~ .ff-items .ff-university-of-michigan*/
 
-.ff-container input.ff-select-type-all:checked ~ .ff-items li
+/*.ff-container input.ff-select-type-all:checked ~ .ff-items li*/
+
 .ff-container input.ff-barnard-college:checked ~ .ff-items .ff-barnard-college,
 .ff-container input.ff-dartmouth-college:checked ~ .ff-items .ff-dartmouth-college,
-.ff-container input.ff-georgetown-university ~ .ff-items .ff-georgetown-university,
-.ff-container input.ff-harvard-university ~ .ff-items .ff-harvard-university,
-.ff-container input.ff-standford-university ~ .ff-items .ff-standford-university,
-.ff-container input.ff-university-of-georgia ~ .ff-items .ff-university-of-georgia,
-.ff-container input.ff-university-of-michigan ~ .ff-items .ff-university-of-michigan,
-.ff-container input.ff-university-of-southern-california ~ .ff-items .ff-university-of-southern-california,
-.ff-container input.ff-university-of-virginia ~ .ff-items .ff-university-of-southern-california,
-.ff-container input.ff-yale-university ~ .ff-items .ff-yale-university {	
+.ff-container input.ff-georgetown-university:checked ~ .ff-items .ff-georgetown-university,
+.ff-container input.ff-harvard-university:checked ~ .ff-items .ff-harvard-university,
+.ff-container input.ff-standford-university:checked ~ .ff-items .ff-standford-university,
+.ff-container input.ff-university-of-georgia:checked ~ .ff-items .ff-university-of-georgia,
+.ff-container input.ff-university-of-michigan:checked ~ .ff-items .ff-university-of-michigan,
+.ff-container input.ff-university-of-southern-california:checked ~ .ff-items .ff-university-of-southern-california,
+.ff-container input.ff-university-of-virginia:checked ~ .ff-items .ff-university-of-southern-california,
+.ff-container input.ff-yale-university:checked ~ .ff-items .ff-yale-university {	
 	opacity: 1;
 	-webkit-transform: scale(1.1);
 	-moz-transform: scale(1.1);
