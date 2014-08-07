@@ -21,6 +21,11 @@ class StudentsController < ApplicationController
 		@schools["University of Southern California"] = "ff-university-of-southern-california"
 		@schools["University of Virginia"] = "ff-university-of-virginia"
 		@schools["Yale University"] = "ff-yale-university"
+		@projects = Hash.new([])
+		Project.all.each do |project| 
+			@projects[project.name] = project.id
+		end
+
 	end
 
 
@@ -50,6 +55,10 @@ class StudentsController < ApplicationController
 		@schools["University of Southern California"] = "ff-university-of-southern-california"
 		@schools["University of Virginia"] = "ff-university-of-virginia"
 		@schools["Yale University"] = "ff-yale-university"
+		@projects = Hash.new([])
+		Project.all.each do |project| 
+			@projects[project.name] = project.id
+		end
 	end
 
 

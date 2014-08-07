@@ -107,7 +107,7 @@
 
 /*.ff-container input.ff-select-type-all:checked ~ .ff-items li*/
 
-.ff-container input.ff-barnard-college:checked ~ .ff-items .ff-barnard-college,
+/*.ff-container input.ff-barnard-college:checked ~ .ff-items .ff-barnard-college,
 .ff-container input.ff-dartmouth-college:checked ~ .ff-items .ff-dartmouth-college,
 .ff-container input.ff-georgetown-university:checked ~ .ff-items .ff-georgetown-university,
 .ff-container input.ff-harvard-university:checked ~ .ff-items .ff-harvard-university,
@@ -124,7 +124,7 @@
 	-ms-transform: scale(1.1);
 	transform: scale(1.1);
 }
-
+*/
 /*.ff-container input.ff-harvard-university:checked ~ .ff-items li:not(.ff-harvard-university),
 .ff-container input.ff-yale-university:checked ~ .ff-items li:not(.ff-yale-university),
 .ff-container input.ff-university-of-michigan:checked ~ .ff-items li:not(.ff-university-of-michigan)*/
