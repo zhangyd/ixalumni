@@ -1,35 +1,23 @@
+<div id="project_page_title">
+ 	<h1>IX Past Projects</h1>
+</div>
+
  <div class="container">
 			
 	<section id="dg-container" class="dg-container">
 		<div class="dg-wrapper">
 
-			
-			<li>
-				<%= image_tag @projects[0].screenshot %>
-				<div><%= @projects[0].url %></div>
-			</li>
-			
-			<li>
-				<%= image_tag @projects[1].screenshot %>
-				<div><%= @projects[1].url %></div>
-			</li>
-			
-			<li>
-				<%= image_tag @projects[2].screenshot %>
-				<div><%= @projects[2].url %></div>
-			</li>
-			
-			<li>
-				<%= image_tag @projects[3].screenshot %>
-				<div><%= @projects[3].url %></div>
-			</li>
-			
-			<li>
-				<%= image_tag @projects[4].screenshot %>
-				<div><%= @projects[4].url %></div>
-			</li>
-			
-
+			<% @projects.each do |project| %>
+				<li>
+					<%= image_tag project.screenshot %>
+					<div id="project_info">
+						<%= project.url %>
+						<% project.students.each do |student| %>
+							<span><%= student.first_name + " " %></span>
+						<% end %>
+					</div>
+				</li>
+			<% end %>
 			
 		</div>
 

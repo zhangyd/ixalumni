@@ -1,8 +1,13 @@
+#project_page_title {
+	text-align: center;
+	margin-bottom: 0px;
+}
+
 .dg-container{
 	width: 100%;
 	height: 450px;
 	position: relative;
-	margin-top: 150px;
+	margin-top: 30px;
 }
 .dg-wrapper{
 	width: 481px;
@@ -82,3 +87,33 @@
 	background-position: top right;
 	margin-left: 10px;
 }
+
+#project_info {
+	
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

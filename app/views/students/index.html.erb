@@ -1,6 +1,8 @@
 <div class="container">
 
-
+	<div id="alumni_contact_title">
+		<h1>Meet An IX Alumni</h1>
+	</div>
 	
 	<section class="ff-container">
 
@@ -43,11 +45,11 @@
 			<% @students.each do |student| %>
 				<li class="<%= student.school %>">
 					<%= image_tag student.pic %>
-					<span><%= student.first_name + " " + student.last_name %></span><br>
-					
+					<p><%= student.first_name + " " + student.last_name %></p>
+
 
 					<button class="btn btn-primary btn-lg" data-toggle="modal" data-target="#<%= student.id %>">
-						Contact
+						Read More
 					</button>
 
 					<!-- Modal -->
@@ -59,11 +61,13 @@
 					        <h4 class="modal-title" id="myModalLabel"><%= "Grab a coffee with " + student.first_name %></h4>
 					      </div>
 					      <div class="modal-body">
-					        <%= student.first_name %>
+					      	<%= image_tag student.pic %>
+					        <%= student.first_name %><br>
+					        <%= "Email: " + student.email %>
 					      </div>
 					      <div class="modal-footer">
 					        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-					        <button type="button" class="btn btn-primary">Save changes</button>
+					        <button type="button" class="btn btn-primary">Send Message</button>
 					      </div>
 					    </div>
 					  </div>
