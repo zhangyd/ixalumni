@@ -15,7 +15,6 @@ class ProjectsController < ApplicationController
 
 	def create
 		@project = Project.create(project_params)
-
 		redirect_to projects_path
 	end
 

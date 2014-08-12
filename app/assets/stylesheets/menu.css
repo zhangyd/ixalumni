@@ -220,10 +220,10 @@ body  {
 
 @media screen and (max-width: 55.5em) {
 
-	/*.bt-menu ul li a {
+	.bt-menu ul li a {
 		font-size: 75%;
-	}*/
-	.bt-menu ul li {
+	}
+	/*.bt-menu ul li {
 		margin: 0 15px;
 	}
 
@@ -233,15 +233,15 @@ body  {
 
 	.bt-menu ul li a:before {
 		display: block;
-	}
+	}*/
 }
 
 @media screen and (max-width: 32em) {
-	/*.bt-menu ul li a {
-		font-size: 10%;
-	}*/
+	.bt-menu ul li a {
+		font-size: 50%;
+	}
 
-	.bt-menu-trigger {
+	/*.bt-menu-trigger {
 		width: 40px;
 		margin-left: -20px;
 	}
@@ -260,5 +260,5 @@ body  {
 
 	.bt-menu ul li a:before {
 		font-size: 24px;
-	}
+	}*/
 }
